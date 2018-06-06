@@ -30,7 +30,7 @@ Sample.alias_class_method
 => 'class_method'
 
 # undef class method
-Sample.singleton_eval { undef :class_method }
+Sample.singleton_eval { undef_method :class_method }
 
 Sample.alias_class_method
 => error
