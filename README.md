@@ -1,6 +1,6 @@
 # SingletonEval
 
-enter singleton class scope simply
+Enter singleton class scope simply
 
 ## Installation
 
@@ -14,7 +14,7 @@ require 'singleton_eval'
 
 ## Usage
 
-You can operate class method simply.
+You can operate instance method of singleton class simply.
 
 ```ruby
 class Sample
@@ -33,7 +33,7 @@ Sample.alias_class_method
 Sample.singleton_eval { undef_method :alias_class_method }
 
 Sample.alias_class_method
-=> error
+=> NoMethodError
 
 ```
 
